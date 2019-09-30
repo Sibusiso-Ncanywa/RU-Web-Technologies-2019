@@ -1,5 +1,5 @@
 <?php
-$User = $_GET["User_Name"];
-$Pin = $_GET["Password"];
+$User = $_POST["User_Name"];
+$Pin = $_POST["Password"];
 echo $User;
 ?>
