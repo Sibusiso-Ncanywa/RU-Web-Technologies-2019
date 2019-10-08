@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<hmlt>
+<body>
+    <script>
+        function inputValidate(){
+            var objects =  document.getElementById("buttonSub");
+            if(document.UserLongin.User.value == "" || document.UserLongin.password.value == ""){
+                alert("Empty parameter");                
+                return false;
+            }
+        }
+
+        </script>
+<form name = "UserLongin" method="POST" action="Check.php" onsubmit="return inputValidate()">
+    User name: 
+        <input type="text" id = "User" name="User_Name">
+        <br>
+    Password:
+        <input type="text" id = "password" name="Password" >
+        <br>
+    <input type="submit"  id = "buttonSub" name="Enter">
+</form>
+    
+</body>
+
+</hmlt>
